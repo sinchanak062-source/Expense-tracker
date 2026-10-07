@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<nav>
+    <div class="brand">
+        <b>₹</b>
+        <div>
+            <h2>Expense Tracker</h2>
+            <small>Manage your money easily</small>
+        </div>
+    </div>
+    <div class="nav">
+        <button>Dashboard</button>
+        <button>Reports</button>
+        <button class="profile">S</button>
+    </div>
+</nav>
+
+<section class="welcome">
+    <div>
+        <h2>Good morning 👋</h2>
+        <p>Here's your spending overview.</p>
+    </div>
+    <button class="primary">+ Add Expense</button>
+</section>
+
+
+<section class="stats">
+
+    <div class="card">
+        <span>Total Balance</span>
+        <h2>₹12,450</h2>
+        <small class="green">↑ 8.2% from last month</small>
+    </div>
+
+    <div class="card">
+        <span>Total Spent</span>
+        <h2>₹7,800</h2>
+        <small class="red">↑ 4.5% from last month</small>
+    </div>
+
+    <div class="card">
+        <span>Monthly Budget</span>
+        <h2>₹15,000</h2>
+        <div class="progress"><i></i></div>
+        <small>52% used</small>
+    </div>
+
+    <div class="card">
+        <span>Remaining</span>
+        <h2>₹7,200</h2>
+        <small class="green">48% remaining</small>
+    </div>
+
+</section>
+
+
+<section class="content">
+
+<div>
+
+    <div class="box">
+        <h3>Add New Expense</h3>
+        <small>Record where your money goes</small>
+
+        <form>
+            <input type="text" placeholder="Expense name">
+            <input type="number" placeholder="Amount">
+
+            <select>
+                <option>Food</option>
+                <option>Transport</option>
+                <option>Shopping</option>
+                <option>Entertainment</option>
+            </select>
+
+            <input type="date">
+
+            <button class="primary save">Save Expense</button>
+        </form>
+    </div>
+
+
+    <div class="box">
+        <h3>Recent Transactions</h3>
+        <small>Your latest spending activity</small>
+
+        <div class="expense">🍴 <span>Weekly groceries<br><small>Food · Today</small></span><b>− ₹2,400</b></div>
+        <div class="expense">🚗 <span>Metro pass<br><small>Transport · Yesterday</small></span><b>− ₹900</b></div>
+        <div class="expense">🛍️ <span>New sneakers<br><small>Shopping · 04 Oct</small></span><b>− ₹2,100</b></div>
+        <div class="expense">🎬 <span>Movie night<br><small>Entertainment · 03 Oct</small></span><b>− ₹800</b></div>
+    </div>
+
+</div>
+
+
+<div>
+
+    <div class="box">
+        <h3>Spending by Category</h3>
+        <small>This month's expenses</small>
+
+        <div class="category">🍴 Food <b>₹3,200</b></div>
+        <div class="bar"><i class="food"></i></div>
+
+        <div class="category">🛍️ Shopping <b>₹2,100</b></div>
+        <div class="bar"><i class="shop"></i></div>
+
+        <div class="category">🚗 Transport <b>₹900</b></div>
+        <div class="bar"><i class="transport"></i></div>
+
+        <div class="category">🎬 Entertainment <b>₹800</b></div>
+        <div class="bar"><i class="entertainment"></i></div>
+    </div>
+
+
+    <div class="tip">
+        💡 <span><b>Spending tip</b><br>
+        Food is your biggest expense this month.</span>
+    </div>
+
+</div>
+
+</section>
+
+
+<footer>
+    <span>Expense Tracker</span>
+    <span>All amounts in INR ₹</span>
+</footer>
+
+</div>
+
+</body>
+</html>
